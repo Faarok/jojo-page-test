@@ -1,0 +1,307 @@
+/* PARAMS */
+* {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+::selection {
+	background-color: #0C5179;
+	color: white;
+}
+
+body {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    color: lightgrey;
+    font-family: Arial, sans-serif;
+    background-color: #181a1b;
+}
+
+.main {
+    padding: 15px;
+}
+
+a {
+    white-space: none;
+}
+
+p {
+    margin: 0;
+}
+
+figure {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.material-icons {
+    vertical-align: bottom;
+}
+
+/* MAIN */
+.main {
+    width: 60%;
+    margin: auto;
+}
+
+.main a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* BG COLOR OPTIONS */
+.darkblue {
+    background-color: #2d3c53;
+}
+
+.lightblue {
+    background-color: #37578e;
+}
+
+.blue {
+    background-color: #2a4471;
+}
+
+/* TITLEBAR */
+.titlebar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.titlebar .button {
+    padding: 5px;
+    background-color: #181a1b;
+    color: #8fa9d5;
+    transition: 0.5s ease;
+}
+
+/* SOCIALBAR */
+.socialbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+/* CATEGORYBAR */
+.categorybar ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.categorybar a {
+    display: block;
+    transition: 0.5s ease;
+    padding: 7px;
+    line-height: 24px;
+}
+
+.categorybar a:hover {
+    opacity: 0.7;
+    background-color: #4d6b9e;
+    transition: 0.5s ease;
+}
+
+/* CONTENT */
+.content {
+    display: flex;
+    background-color: #181a1b;
+}
+
+/* CONTENT LEFT */
+.left {
+    width: 35%;
+}
+
+.left ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.left li {
+    width: 40%;
+    border-right: solid 1px grey;
+}
+
+.left a {
+    display: block;
+    transition: 0.5s ease;
+    padding: 7px;
+    line-height: 20px;
+    text-align: center;
+    color: #b2c1dc;
+    background-color: #262a2b;
+    font-size: 0.9rem;
+}
+
+.left a:hover {
+    opacity: 0.7;
+    background-color: #34383a;
+    transition: 0.5s ease;
+}
+
+.left img {
+    width: 100%;
+    padding: 5px;
+    border: solid 1px lightgrey;
+}
+
+.left figcaption {
+    color: grey;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* CONTENT RIGHT */
+.right {
+    width: 65%;
+}
+
+.right .popularity {
+    display: flex;
+    justify-content: space-between;
+    height: 56px;
+    background-color: #1d2021;
+    width: 100%;
+    border-bottom: solid 1px grey;
+}
+
+.right .rating {
+    display: flex;
+    align-items: center;
+}
+
+.right .rating span {
+    font-size: 56px;
+    color: #eca22f;
+}
+
+.right .rating p:first-child {
+    font-size: 2rem;
+    height: 65%;
+}
+
+.right .rating p:last-child {
+    color: grey;
+    font-size: 0.8rem;
+}
+
+.right .classement {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.right .classement .top, .right .classement .bot {
+    display: flex;
+    flex: 1 1 0;
+    color: #84b1db;
+}
+
+.right .classement .top {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.right .classement .bot {
+    font-size: 0.9rem;
+}
+
+.right .classement li {
+    flex: 1 1 0;
+    text-align: center;
+    line-height: 28px;
+    border-right: solid 1px grey;
+}
+
+.right .description {
+    padding: 10px;
+}
+
+.right .description p {
+    margin: 15px 0;
+}
+
+/* TOOLBAR */
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    background-color: #1d2021;
+    border: solid 1px grey;
+    border-bottom: solid 3px #314564;
+}
+
+.toolbar .case {
+    padding: 3px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+    border-right: solid 1px grey
+}
+
+.toolbar .case p {
+    font-size: 0.8rem;
+}
+
+.toolbar .case span {
+    color: #8ab6dd;
+}
+
+.toolbar .case .heart {
+    color: #e26a80;
+}
+
+.toolbar .rate-stars {
+    white-space: none;
+    border-right: solid 1px grey;
+}
+
+.toolbar .star {
+    color: #7daad5;
+    font-size: 35px;
+}
+
+.toolbar .star:nth-child(n):hover ~ .star {
+    color: yellow;
+    transition: 0.5s ease;
+}
+
+/* SYNOPSIS */
+.synopsis {
+    padding-top: 20px;
+}
+
+.synopsis .bar {
+    padding: 10px;
+    text-indent: 20px;
+}
+
+.synopsis p {
+    padding: 7px 15px;
+    line-height: 1.5rem;
+}
+
+.synopsis .align-right {
+    text-align: right;
+}
+
+.synopsis .button {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    justify-content: space-evenly;
+    border: solid 1px lightgrey;
+    color: #649bc1;
+    margin: auto;
+}
